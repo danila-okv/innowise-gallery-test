@@ -1,6 +1,5 @@
 import UIKit
 
-
 final class FavoritesViewController: UIViewController {
     weak var coordinator: FavoritesCoordinatorProtocol?
     

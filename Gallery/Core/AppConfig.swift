@@ -1,6 +1,5 @@
 import Foundation
 
-
 enum AppConfig {
     static let unsplashAccessKey: String = {
         guard

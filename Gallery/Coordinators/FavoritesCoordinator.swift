@@ -1,6 +1,5 @@
 import UIKit
 
-
 final class FavoritesCoordinator: NavigationCoordinator, FavoritesCoordinatorProtocol {
     let navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
@@ -15,11 +14,10 @@ final class FavoritesCoordinator: NavigationCoordinator, FavoritesCoordinatorPro
     }
     
     func start() {
-        let vc = FavoritesViewController()
-        vc.coordinator = self
-        navigationController.setViewControllers([vc], animated: false)
+        let favoritesVC = FavoritesViewController()
+        favoritesVC.coordinator = self
+        navigationController.setViewControllers([favoritesVC], animated: false)
     }
 }
-
 
 protocol FavoritesCoordinatorProtocol: AnyObject { }

@@ -1,6 +1,5 @@
 import UIKit
 
-
 final class AppCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     

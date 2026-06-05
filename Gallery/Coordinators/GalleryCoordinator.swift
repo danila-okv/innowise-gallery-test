@@ -1,6 +1,5 @@
 import UIKit
 
-
 final class GalleryCoordinator: NavigationCoordinator, GalleryCoordinatorProtocol {
     let navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
@@ -15,11 +14,10 @@ final class GalleryCoordinator: NavigationCoordinator, GalleryCoordinatorProtoco
     }
     
     func start() {
-        let vc = GalleryViewController()
-        vc.coordinator = self
-        navigationController.setViewControllers([vc], animated: false)
+        let galleryVC = GalleryViewController()
+        galleryVC.coordinator = self
+        navigationController.setViewControllers([galleryVC], animated: false)
     }
 }
-
 
 protocol GalleryCoordinatorProtocol: AnyObject { }
