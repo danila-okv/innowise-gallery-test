@@ -1,7 +1,8 @@
 import UIKit
 
 
-final class FavoritesNavController: UINavigationController {
+final class FavoritesViewController: UIViewController {
+    weak var coordinator: FavoritesCoordinatorProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,7 +1,8 @@
 import UIKit
 
 
-final class GalleryNavController: UINavigationController {
+final class GalleryViewController: UIViewController {
+    weak var coordinator: GalleryCoordinatorProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
