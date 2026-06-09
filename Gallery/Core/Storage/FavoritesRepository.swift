@@ -1,6 +1,6 @@
 import CoreData
 
-final class FavoriteRepository: FavoritesRepositoryProtocol {
+final class FavoritesRepository: FavoritesRepositoryProtocol {
     let context: NSManagedObjectContext
     
     init(context: NSManagedObjectContext = CoreDataManager.shared.context) {
