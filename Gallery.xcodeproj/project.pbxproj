@@ -536,7 +536,7 @@
 			);
 			currentVersion = 9C958AD12FD85F5C0013EF0B /* Gallery.xcdatamodel */;
 			name = Gallery.xcdatamodeld;
-			path = Gallery/Core/Storage/Gallery.xcdatamodeld;
+			path = Gallery/Core/Persistence;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
