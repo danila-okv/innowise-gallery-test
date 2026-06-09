@@ -1,16 +1,21 @@
 import Foundation
 
 final class NetworkService: NetworkServiceProtocol {
-    let session: URLSession
-    let decoder: JSONDecoder
+    private let session: URLSession
+    private let decoder: JSONDecoder
+    private let accessKey: String
     
     private enum Constants {
         static let baseURL = "https://api.unsplash.com"
         static let photoPath = "/photos"
     }
     
-    init(session: URLSession = .shared) {
+    init(
+        session: URLSession = .shared,
+        accessKey: String = AppConfig.unsplashAccessKey
+    ) {
         self.session = session
+        self.accessKey = accessKey
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
         decoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -33,7 +38,7 @@ final class NetworkService: NetworkServiceProtocol {
         
         var request = URLRequest(url: url)
         request.setValue(
-            "Client-ID \(AppConfig.unsplashAccessKey)",
+            "Client-ID \(accessKey)",
             forHTTPHeaderField: "Authorization"
         )
         
