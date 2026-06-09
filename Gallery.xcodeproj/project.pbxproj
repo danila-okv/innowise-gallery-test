@@ -10,7 +10,18 @@
 		9CFA07832FD31D7700FD8DF9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9CFA07822FD31D7700FD8DF9 /* SnapKit */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9C958AC02FD8482C0013EF0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CFA071F2FD2D49A00FD8DF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFA07262FD2D49B00FD8DF9;
+			remoteInfo = Gallery;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		9C958ABC2FD8482B0013EF0B /* GalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFA07272FD2D49B00FD8DF9 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -25,6 +36,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		9C958ABD2FD8482C0013EF0B /* GalleryTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GalleryTests;
+			sourceTree = "<group>";
+		};
 		9CFA07292FD2D49B00FD8DF9 /* Gallery */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -36,6 +52,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9C958AB92FD8482B0013EF0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CFA07242FD2D49B00FD8DF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				9CFA07292FD2D49B00FD8DF9 /* Gallery */,
+				9C958ABD2FD8482C0013EF0B /* GalleryTests */,
 				9CFA07282FD2D49B00FD8DF9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				9CFA07272FD2D49B00FD8DF9 /* Gallery.app */,
+				9C958ABC2FD8482B0013EF0B /* GalleryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +91,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9C958ABB2FD8482B0013EF0B /* GalleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C958AC22FD8482C0013EF0B /* Build configuration list for PBXNativeTarget "GalleryTests" */;
+			buildPhases = (
+				9C958AB82FD8482B0013EF0B /* Sources */,
+				9C958AB92FD8482B0013EF0B /* Frameworks */,
+				9C958ABA2FD8482B0013EF0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C958AC12FD8482C0013EF0B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9C958ABD2FD8482C0013EF0B /* GalleryTests */,
+			);
+			name = GalleryTests;
+			packageProductDependencies = (
+			);
+			productName = GalleryTests;
+			productReference = 9C958ABC2FD8482B0013EF0B /* GalleryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9CFA07262FD2D49B00FD8DF9 /* Gallery */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CFA073A2FD2D49C00FD8DF9 /* Build configuration list for PBXNativeTarget "Gallery" */;
@@ -100,6 +148,10 @@
 				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
+					9C958ABB2FD8482B0013EF0B = {
+						CreatedOnToolsVersion = 26.1;
+						TestTargetID = 9CFA07262FD2D49B00FD8DF9;
+					};
 					9CFA07262FD2D49B00FD8DF9 = {
 						CreatedOnToolsVersion = 26.1;
 					};
@@ -123,11 +175,19 @@
 			projectRoot = "";
 			targets = (
 				9CFA07262FD2D49B00FD8DF9 /* Gallery */,
+				9C958ABB2FD8482B0013EF0B /* GalleryTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9C958ABA2FD8482B0013EF0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CFA07252FD2D49B00FD8DF9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,6 +219,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9C958AB82FD8482B0013EF0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CFA07232FD2D49B00FD8DF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,7 +235,57 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9C958AC12FD8482C0013EF0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFA07262FD2D49B00FD8DF9 /* Gallery */;
+			targetProxy = 9C958AC02FD8482C0013EF0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		9C958AC32FD8482C0013EF0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3V899K3TN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.okv.GalleryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gallery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gallery";
+			};
+			name = Debug;
+		};
+		9C958AC42FD8482C0013EF0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3V899K3TN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.okv.GalleryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gallery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gallery";
+			};
+			name = Release;
+		};
 		9CFA073B2FD2D49C00FD8DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -194,7 +311,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -227,7 +344,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -359,6 +476,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9C958AC22FD8482C0013EF0B /* Build configuration list for PBXNativeTarget "GalleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C958AC32FD8482C0013EF0B /* Debug */,
+				9C958AC42FD8482C0013EF0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9CFA07222FD2D49A00FD8DF9 /* Build configuration list for PBXProject "Gallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
