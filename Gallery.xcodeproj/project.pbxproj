@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C958AD22FD85F5C0013EF0B /* Gallery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C958AD02FD85F5C0013EF0B /* Gallery.xcdatamodeld */; };
 		9CFA07832FD31D7700FD8DF9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9CFA07822FD31D7700FD8DF9 /* SnapKit */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		9C958ABC2FD8482B0013EF0B /* GalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C958AD12FD85F5C0013EF0B /* Gallery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gallery.xcdatamodel; sourceTree = "<group>"; };
 		9CFA07272FD2D49B00FD8DF9 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 		9CFA071E2FD2D49A00FD8DF9 = {
 			isa = PBXGroup;
 			children = (
+				9C958AD02FD85F5C0013EF0B /* Gallery.xcdatamodeld */,
 				9CFA07292FD2D49B00FD8DF9 /* Gallery */,
 				9C958ABD2FD8482C0013EF0B /* GalleryTests */,
 				9CFA07282FD2D49B00FD8DF9 /* Products */,
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C958AD22FD85F5C0013EF0B /* Gallery.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +527,20 @@
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9C958AD02FD85F5C0013EF0B /* Gallery.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C958AD12FD85F5C0013EF0B /* Gallery.xcdatamodel */,
+			);
+			currentVersion = 9C958AD12FD85F5C0013EF0B /* Gallery.xcdatamodel */;
+			name = Gallery.xcdatamodeld;
+			path = Gallery/Core/Storage/Gallery.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9CFA071F2FD2D49A00FD8DF9 /* Project object */;
 }
