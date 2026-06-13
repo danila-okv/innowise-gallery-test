@@ -11,13 +11,11 @@ final class ImageLoader: ImageLoaderProtocol {
     }
     
     func loadImage(from url: URL) async throws -> UIImage {
-        let (data, response) = try await session.data(from: url)
         let key = url.absoluteString as NSString
-        
         if let cached = cache.object(forKey: key) {
             return cached
         }
-        
+        let (data, response) = try await session.data(from: url)
         guard let httpResponse = response as? HTTPURLResponse,
               (200...299).contains(httpResponse.statusCode) else {
             throw ImageLoaderError.invalidResponse
