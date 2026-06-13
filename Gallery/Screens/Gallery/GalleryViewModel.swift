@@ -16,8 +16,8 @@ final class GalleryViewModel {
     private let perPage = 30
     
     init(
-        networkService: NetworkServiceProtocol,
-        favoritesRepository: FavoritesRepositoryProtocol
+        networkService: NetworkServiceProtocol = NetworkService(),
+        favoritesRepository: FavoritesRepositoryProtocol = FavoritesRepository()
     ) {
         self.networkService = networkService
         self.favoritesRepository = favoritesRepository
@@ -32,8 +32,9 @@ final class GalleryViewModel {
     }
     
     func loadNextPage() {
-        guard !isFetching else { return }
-        guard case .loaded(let photos, _) = state else { return }
+        guard !isFetching, canLoadMore else { return }
+        guard case .loaded(let current, _) = state else { return }
+        state = .loaded(photos: current, isLoadingMore: true)
         fetch(reset: false)
     }
     
@@ -59,6 +60,7 @@ final class GalleryViewModel {
                     state = .loaded(photos: photos, isLoadingMore: false)
                 }
             }
+            isFetching = false
         }
     }
 }
