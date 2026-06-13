@@ -6,7 +6,7 @@ final class ImageLoader: ImageLoaderProtocol {
     private let session: URLSession
     private let cache = NSCache<NSString, UIImage>()
     
-    init(session: URLSession = .shared) {
+    private init(session: URLSession = .shared) {
         self.session = session
     }
     
